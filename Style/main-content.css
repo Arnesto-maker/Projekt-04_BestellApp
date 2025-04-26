@@ -1,0 +1,85 @@
+.main-Content {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    min-height: 120vh;
+    max-height: 120vh;
+    height: 120vh;
+}
+.content-grandParent01{
+    min-height: 120vh;
+    max-height: 120vh;
+    height: 120vh;
+    background-color: blue;
+    width: 80%;
+}
+.content-grandParent02{
+    min-height: 120vh;
+    max-height: 120vh;
+    height: 120vh;
+    background-color: blueviolet;
+    width: 20%;
+    
+    
+}
+.content-parent021{
+    background-color: red;
+    min-height: 50vh;
+    max-height: 50vh;
+    height: 50vh;
+    margin-top: 32px;
+
+}
+.child-title{
+    text-align: center;
+}
+.basket-function{
+    display: flex;
+}
+.amount{
+    background-color: aqua;
+    width: 50%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.amountPlus{
+    height: 16px;
+    width: 16px;
+    border-radius:50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amountMinus{
+    height: 16px;
+    width: 16px;
+    border-radius:50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.amount-sum{
+    background-color: brown;
+    width: 50%;
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sumNumber{
+    height: 16px;
+    width: 16px;
+}
+.basket-icon{
+    height: 16px;
+    width: 16px;
+    background-color: black;
+  
+}

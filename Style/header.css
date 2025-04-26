@@ -1,0 +1,26 @@
+.header-parent{
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+header{
+    height: 16vh;
+    max-height: 16vh;
+    background-color: orangered;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+}
+.logo-header{
+    width: auto;
+    height: 60px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding-left: 16px;
+}

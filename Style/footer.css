@@ -1,0 +1,26 @@
+footer {
+    height: 16vh;
+    max-height: 16vh;
+    background-color: orangered;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+.footer-parent{
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+.footer-content{
+    color: white;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
