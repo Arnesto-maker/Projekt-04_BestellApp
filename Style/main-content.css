@@ -4,25 +4,152 @@
     flex-direction: row;
     align-items: center;
     flex: 1;
-    min-height: 120vh;
-    max-height: 120vh;
-    height: 120vh;
+    min-height: 200vh;
+    max-height: 200vh;
+    height: 200vh;
 }
 .content-grandParent01{
+    min-height: 200vh;
+    max-height: 200vh;
+    height: 200vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.content-parent01{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    max-height: 100vh;
+    position: relative;
+    
+}
+.imgTopContent{
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
+}
+.imgBottom{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.imgBottomContent{
+    width: 100%;
+    height: 18vh;
+    object-fit: cover;
+    
+}
+.rightArrow{
+    height: 24px;
+}
+.imageRound{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.text01{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    
+}
+.text02{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: red;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.links{
+    display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.imgRoundContent{
+    position: absolute;
+    top: 18%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.content-parent12{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    gap: 10px;
     min-height: 120vh;
     max-height: 120vh;
     height: 120vh;
-    background-color: blue;
-    width: 80%;
+    overflow-y: scroll;
+}
+.menuCard{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 2px solid rgba(128, 128, 128, 0.164);
+}
+.menuCard:hover{
+    background-color: rgba(255, 68, 0, 0.223);
+    cursor: pointer;
+}
+.addToCart{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 24px;
+    color: orangered;
+    cursor: pointer;
+}
+.addToCartInnerbox{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    font-weight: 700;
+
+}
+.itemTitle{
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+.itemPrice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 16px;
+    color: orangered;
+    font-weight: 700;
+    
 }
 .content-grandParent02{
-    min-height: 120vh;
-    max-height: 120vh;
-    height: 120vh;
+    min-height: 200vh;
+    max-height: 200vh;
+    height: 200vh;
     background-color: blueviolet;
     width: 20%;
-    
-    
 }
 .content-parent021{
     background-color: red;
@@ -54,6 +181,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .amountMinus{
     height: 16px;
@@ -63,6 +191,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
 .amount-sum{
@@ -82,4 +211,7 @@
     width: 16px;
     background-color: black;
   
+}
+.amountNumber{
+    width: 24px;
 }
