@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="Style/main-content.css">
 </head>
 
-<body>
+<body onload="renderMenucard()">
     <header>
         <div class="header-parent">
             <div class="logo">
@@ -39,7 +39,9 @@
                     <div class="imgTop">
                         <img src="Assets/food-4773380_1280.jpg" alt="imgTop" class="imgTopContent">
                     </div>
-                    <div class="text01"><h3>Paradise Noodles</h3></div>
+                    <div class="text01">
+                        <h3>Paradise Noodles</h3>
+                    </div>
                     <div class="text02">Bewertung (4,2 von 5 Sternen)</div>
                     <div class="links">
                         <ul>
@@ -56,65 +58,52 @@
                     </div>
                 </div>
                 <div class="content-parent12">
-                    <a href="#"><h3>Hauptgerichte</h3></a>
-                    <div class="menuCard">
-                        <div id="addToCartId00" class="addToCart"><div class="addToCartInnerbox">+</div></div>
-                        <div id="itemTitle00" class="itemTitle">Hier Kommt dein Title</div>
-                        <div id="itemDescription00" class="itemDescription">Hier kommt dein Description</div>
-                        <div id="itemprice00" class="itemPrice">Hier kommt dein price</div>
-                    </div>
-                    <!-- hier wird gerendert -->
-                    
-                    
-                    
-                    
-                    
-                    
+                    <a href="#">
+                        <h3>Hauptgerichte</h3>
+                    </a>
+                    <div id="menuCardSection"></div>
                     <a href="#"><h3>Beilagen</h3></a>
-                    <div class="menuCard">
-                        <div id="addToCartId00" class="addToCart"><div class="addToCartInnerbox">+</div></div>
-                        <div id="itemTitle00" class="itemTitle">Hier Kommt dein Title</div>
-                        <div id="itemDescription00" class="itemDescription">Hier kommt dein Description</div>
-                        <div id="itemprice00" class="itemPrice">Hier kommt dein price</div>
-                    </div>
-                    <!-- hier wird gerendert -->
-                    
-
-
-
-
-
-
-
+                    <div id="menuCardSection2"></div>
                 </div>
             </div>
             <div class="content-grandParent02">
                 <div class="content-parent021">
-                    <div class="child-title"><h3>Warenkorb</h3></div>
-                    <!-- <div class="child02">
-                        <div class="food-title">Gericht title</div>
+                    <div class="child-title">
+                        <h3>Warenkorb</h3>
+                    </div>
+                    <div class="child02" id="menuInCart0">
+                        <div class="food-title" id="foodTitle0">Gericht title</div>
                         <div class="basket-function">
                             <div class="amount">
-                                <div class="amountMinus" onclick="amountChange(this,-1)">-</div>
-                                <input type="text" id="amountNumber" class="amountNumber" value="1" readonly>
-                                <div class="amountPlus" onclick="amountChange(this,1)">+</div>
+                                <div class="amountMinus" id="amountMinus0" onclick="amountMinus(), amountSum()">-</div>
+                                <div class="amountNumber" id="amountNumber0"></div>
+                                <div class="amountPlus" id="amountPlus0" onclick="amountplus(),amountSum()">+</div>
                             </div>
                             <div class="amount-sum">
-                                <div class="sumNumber"></div>
-                                <div class="basket-icon"></div>
+                                <div class="sumNumber" id="sumNumber0"></div>
+                                <div class="basket-icon">
+                                    <img src="Assets/trash-969.png" alt="trash" id="basketIconImg0" class="basketIconImg" onmousedown="basketActive()" onmouseup="basketDeactive()">
+                                </div>
                             </div>
                         </div>
-
-
                     </div>
-                 -->
-
-
-                    </div>
-                    <!-- hier wird dann die ausgewählte items gerendert -->
-                    
                 </div>
+                <div class="delivery">
+                    <div class="deliveryText">Lieferkosten :</div>
+                    <div id="deliveryPriceNumber">5,00</div>
+                </div>
+                <div class="totalSum">
+                    <div class="totalSumText">Total :</div>
+                    <div id="totalSumNumber">2300</div>
+                </div>
+                <div class="buyButton">
+                    <button id="buyButton" onmousedown="buyButtonActive()" onmouseup="buyButtonDeactive()">Bestellen</button>
+                </div>
+                
+
+
             </div>
+        </div>
         </div>
     </section>
     <footer>
@@ -131,5 +120,10 @@
     </footer>
 </body>
 <script src="Script/amount.js"></script>
+<script src="Script/basket.js"></script>
+<script src="Script/buyButtton.js"></script>
+<script src="Script/database.js"></script>
+<script src="Script/templates.js"></script>
+<script src="Script/renderMenucard.js"></script>
 
 </html>

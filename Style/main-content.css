@@ -125,6 +125,9 @@
     font-weight: 700;
 
 }
+.addToCartInnerbox:hover{
+    border: 2px solid orangered;
+}
 .itemTitle{
     font-size: 25px;
     font-weight: 700;
@@ -148,15 +151,17 @@
     min-height: 200vh;
     max-height: 200vh;
     height: 200vh;
-    background-color: blueviolet;
     width: 20%;
+    border: 2px solid rgba(128, 128, 128, 0.218);
 }
 .content-parent021{
-    background-color: red;
     min-height: 50vh;
     max-height: 50vh;
     height: 50vh;
     margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
 }
 .child-title{
@@ -166,7 +171,6 @@
     display: flex;
 }
 .amount{
-    background-color: aqua;
     width: 50%;
     height: 24px;
     display: flex;
@@ -174,44 +178,94 @@
     align-items: center;
 }
 .amountPlus{
-    height: 16px;
-    width: 16px;
-    border-radius:50%;
-    border: 2px solid black;
+    height: 25px;
+    width: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 24px;
+    color: orangered;
+    font-weight: 700;
 }
-.amountMinus{
-    height: 16px;
-    width: 16px;
+.amountPlus:hover{
     border-radius:50%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    border: 2px solid orangered;
 
 }
+.amountMinus{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: orangered;
+    font-weight: 700;
+
+}
+.amountMinus:hover{
+    border-radius:50%;
+    border: 2px solid orangered;
+}
 .amount-sum{
-    background-color: brown;
     width: 50%;
     height: 24px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .sumNumber{
     height: 16px;
     width: 16px;
+    padding-left: 10px;
+
 }
 .basket-icon{
     height: 16px;
     width: 16px;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   
 }
 .amountNumber{
     width: 24px;
+}
+.child02{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+.food-title{
+    overflow-x:hidden;
+}
+.basketIconImg{
+    height: 16px;
+    width: 16px;
+}
+.delivery{
+    display: flex;
+    font-weight: 700;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.totalSum{
+    display: flex;
+    font-weight: 700;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.buyButton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

@@ -1,44 +1,56 @@
 
+function amountplus() {
+    let amountNumber = document.getElementById('amountNumber0');
+    counter ++ ;
+    amountNumber.innerHTML = " ";
+    amountNumber.innerHTML = counter + "X";
+}
+
+function amountMinus() {
+    let amountNumber = document.getElementById('amountNumber0');
+    counter -- ;
+    amountNumber.innerHTML = " ";
+    amountNumber.innerHTML = counter + "X";
+    if (counter < 2) {
+        counter = 1
+        amountNumber.innerHTML = " ";
+        amountNumber.innerHTML = counter + "X";
+    }
+}
+
+function amountSum() {
+    let sumNumber = document.getElementById('sumNumber0')
+    sumNumber.innerHTML = " ";
+    sumNumber.innerHTML = (counter*price) + "€";
+    
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// price = 12.55 ;
-
-
-// function amountChange(clickedElement, amount) {
-//      let container = clickedElement.closest('.amount');
-//      let amountNumber = container.querySelector('.amountNumber');
-//      if (amountNumber) {
-//         value = parseInt(amountNumber.value);
-//         value += amount;
-//         if (value < 1) {value = 1};
-//         amountNumber.value = value
-//      }
+// function amountplus1() {
+//     let amountNumber = document.getElementById('amountNumber1');
+//     counter1 ++ ;
+//     amountNumber.innerHTML = " ";
+//     amountNumber.innerHTML = counter1 + "X";
 // }
-// function amountSUm(container,value,price) {
-//     let sumContainer = container.closest('.amount-sum');
-//     sum = sumContainer.querySelector('.sumNumber');
-//     sumValue = parseFloat(sum)*value*price;
-//     sum.innerHtml = sumValue;
 
+// function amountMinus1() {
+//     let amountNumber = document.getElementById('amountNumber1');
+//     counter1 -- ;
+//     amountNumber.innerHTML = " ";
+//     amountNumber.innerHTML = counter1 + "X";
+//     if (counter1< 2) {
+//         counter1 = 1
+//         amountNumber.innerHTML = " ";
+//         amountNumber.innerHTML = counter1 + "X";
+//     }
+// }
+
+// function amountSum1() {
+//     let sumNumber = document.getElementById('sumNumber1')
+//     sumNumber.innerHTML = " ";
+//     sumNumber.innerHTML = (counter1*price) + "€";
     
 // }
 
@@ -48,19 +60,14 @@
 
 
 
-// let amount = document.querySelector('.amount');
-// if (amount) {
-//     amount.addEventListener('click',function(event){
-//         let amountNumber = amount.querySelector('.amountNumber')
-//         if (event.target.classList.contains('amountPlus')) {
-//             amountNumber.value ++ ;
-            
-//         } else if (event.target.classList.contains('amountMinus')) {
-//             amountNumber.value -- ;
-//             if (amountNumber.value < 1) { amountNumber.value = 1;}
-//         }
-//         amountNumber.value = amountNumber.value;
 
-//     })
-    
-// }
+
+
+
+
+
+
+
+
+
+

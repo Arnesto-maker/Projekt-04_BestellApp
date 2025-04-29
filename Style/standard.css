@@ -54,3 +54,20 @@ a {
 a:hover {
     color: orangered;
 }
+button{
+    background-color: orangered;
+    border: none;
+    height: 32px;
+    width: 75%;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: rgba(255, 68, 0, 0.747);
+    cursor: pointer;
+}
+button.active{
+    background-color: rgba(0, 0, 0, 0.997);
+    color: orangered;
+}
