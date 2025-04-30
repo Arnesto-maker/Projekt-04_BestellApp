@@ -1,20 +1,7 @@
-counter = 0;
-counter1 = 0;
-counter2 = 0;
-counter3 = 0;
-counter4 = 0;
-counter5 = 0;
-counter6 = 0;
-counter7 = 0;
-counter8 = 0;
-counter9 = 0;
-counter10 = 0;
-counter11 = 0;
-counter12 = 0;
-counter13 = 0;
-counter14 = 0;
-counter15 = 0;
-
+basketTitle = [];
+price =[];
+amount = [1,1,1,1,1,1,1,1,1,1,1,1,1];
+sumNumberArray = [];
 dish1 = [
     {
         "name": "5-Wantan Gebacken 7 Stück  ",
@@ -27,23 +14,20 @@ dish1 = [
         "price": "9.30"
     },
     {
-        "name": "5-Wantan Gebacken 7 Stück  ",
-        "description": "mit süß-saurer Soße.",
+        "name": "50a-Pho Suppe mit Huhn ",
+        "description": "Reisbandnudeln,feiner Zimt-Ingwer-Anisstern-Note, Lauchzwiebeln und Koriander.",
         "price": "4.90"
     },
     {
         "name": "11b-Gebratene Nudeln mit knuspriger Ente",
         "description": "und Gemüse",
-        "price": "10.80"
+        "price": "10.50"
     },
     {
         "name": "11d-Gebratene Nudeln mit Garnelen ",
         "description": "und Gemüse",
         "price": "12.30"
-    }
-]
-
-dish2 = [
+    },
     {
         "name": "32-Fastenspeise  ",
         "description": "Verschiedenes Gemüse gebraten und Reis",
@@ -70,4 +54,4 @@ dish2 = [
         "price": "10.20"
     }
 ]
-console.table(dish1);
+

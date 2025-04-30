@@ -1,28 +1,19 @@
-
-
-function basketActive() {
-    let basketIcon = document.getElementById('basketIconImg0');
+function basketActive(index) {
+    let basketIcon = document.getElementById('basketIconImg'+index);
     if (basketIcon.src.endsWith("Assets/trash-969.png")) {
         basketIcon.src = "Assets/red-delete-10437.png"
     }
 }
-function basketDeactive() {
-    let basketIcon = document.getElementById('basketIconImg0');
+function basketDeactive(index) {
+    let basketIcon = document.getElementById('basketIconImg'+index);
     if (basketIcon.src.endsWith("Assets/red-delete-10437.png")) {
         basketIcon.src = "Assets/trash-969.png"
     }
 }
-
-// function basketActive1() {
-//     let basketIcon = document.getElementById('basketIconImg1');
-//     if (basketIcon.src.endsWith("Assets/trash-969.png")) {
-//         basketIcon.src = "Assets/red-delete-10437.png"
-//     }
-// }
-// function basketDeactive1() {
-//     let basketIcon = document.getElementById('basketIconImg1');
-//     if (basketIcon.src.endsWith("Assets/red-delete-10437.png")) {
-//         basketIcon.src = "Assets/trash-969.png"
-//     }
-// }
-
+function removeFormBasket(index) {
+    price.splice(index,1);
+        basketTitle.splice(index,1);
+        newAmount = 1;
+        amount.splice(index,1,newAmount)
+        renderBasket()
+}

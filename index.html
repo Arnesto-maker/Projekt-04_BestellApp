@@ -71,22 +71,7 @@
                     <div class="child-title">
                         <h3>Warenkorb</h3>
                     </div>
-                    <div class="child02" id="menuInCart0">
-                        <div class="food-title" id="foodTitle0">Gericht title</div>
-                        <div class="basket-function">
-                            <div class="amount">
-                                <div class="amountMinus" id="amountMinus0" onclick="amountMinus(), amountSum()">-</div>
-                                <div class="amountNumber" id="amountNumber0"></div>
-                                <div class="amountPlus" id="amountPlus0" onclick="amountplus(),amountSum()">+</div>
-                            </div>
-                            <div class="amount-sum">
-                                <div class="sumNumber" id="sumNumber0"></div>
-                                <div class="basket-icon">
-                                    <img src="Assets/trash-969.png" alt="trash" id="basketIconImg0" class="basketIconImg" onmousedown="basketActive()" onmouseup="basketDeactive()">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="menuBasketSection"></div>
                 </div>
                 <div class="delivery">
                     <div class="deliveryText">Lieferkosten :</div>
@@ -125,5 +110,8 @@
 <script src="Script/database.js"></script>
 <script src="Script/templates.js"></script>
 <script src="Script/renderMenucard.js"></script>
+<script src="Script/buyBasket.js"></script>
+<script src="Script/addToBasket.js"></script>
+<script src="Script/renderBasket.js"></script>
 
 </html>

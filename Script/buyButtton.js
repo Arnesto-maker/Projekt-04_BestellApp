@@ -5,5 +5,4 @@ function buyButtonActive(){
 function buyButtonDeactive() {
     let buyButton = document.getElementById('buyButton');
     buyButton.classList.remove('active');
-    
 }
