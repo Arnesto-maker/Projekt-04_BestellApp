@@ -150,7 +150,7 @@
 .content-grandParent02{
     min-height: 200vh;
     max-height: 200vh;
-    height: 200vh;
+    height: 100vh;
     width: 20%;
     border: 2px solid rgba(128, 128, 128, 0.218);
 }
@@ -162,6 +162,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    position: sticky;
+    top: 0;
 
 }
 .child-title{
@@ -274,4 +276,10 @@
 }
 #menuBasketSection{
     overflow-y: scroll;
+    min-height: 50vh;
+    max-height: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
