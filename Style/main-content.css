@@ -248,6 +248,10 @@
 .food-title{
     font-size: 12px;
     font-weight: 700;
+    height: 28px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .basketIconImg{
     height: 16px;

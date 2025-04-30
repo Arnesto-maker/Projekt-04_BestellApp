@@ -9,10 +9,12 @@ function addToBasket(index) {
         newAmount ++;
         amount.splice(index,1,newAmount)
         amountNumber.innerHTML = " ";
-        amountNumber.innerHTML = newAmount + "X";  
+        amountNumber.innerHTML = newAmount + "X";
+        renderBasket();
     } else {
         price.push(dishPrice);
         basketTitle.push(dishName);
+        renderBasket();
     } 
 }
 

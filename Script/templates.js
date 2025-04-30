@@ -1,11 +1,11 @@
 function getMenuCard(index) {
     return  `<div class="menuCard">
-                    <div id="addToCartId${index}" class="addToCart" onClick = "addToBasket(${index}),renderBasket()">
+                    <div id="addToCartId${index}" class="addToCart" onClick = "addToBasket(${index})">
                         <div class="addToCartInnerbox">+</div>
                     </div>
                     <div id="itemTitle${index}" class="itemTitle">${dish1[index].name}</div>
                     <div id="itemDescription${index}" class="itemDescription">${dish1[index].description}</div>
-                    <div id="itemprice${index}" class="itemPrice">${dish1[index].price} €</div>
+                    <div id="itemprice${index}" class="itemPrice">${dish1[index].price.replace('.',',')} €</div>
                 </div>`;
 }
 function getBuyBasket(index) {
@@ -27,4 +27,7 @@ function getBuyBasket(index) {
                     </div>`;
     
 }
-
+function getTotal(index) {
+    return `${totalArray[index].replace('.',',')}  €`;
+    
+}

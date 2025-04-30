@@ -1,7 +1,9 @@
 basketTitle = [];
 price =[];
-amount = [1,1,1,1,1,1,1,1,1,1,1,1,1];
+amount = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,,1,1,1,1,,1,1,1,1,1,,1];
 sumNumberArray = [];
+totalArray =[];
+delivery = [5]
 dish1 = [
     {
         "name": "5-Wantan Gebacken 7 Stück  ",
