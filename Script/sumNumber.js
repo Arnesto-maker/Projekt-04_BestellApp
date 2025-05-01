@@ -4,5 +4,4 @@ function sumNumberTotal() {
         sum += parseFloat(sumNumberArray[i]);
     }
     return sum
-    
 }

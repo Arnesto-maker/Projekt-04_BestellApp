@@ -27,5 +27,4 @@ function removeFormBasket(index) {
             renderBasket()
             renderTotal();
         
-        
 }

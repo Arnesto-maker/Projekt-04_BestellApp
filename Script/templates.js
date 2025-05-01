@@ -29,5 +29,4 @@ function getBuyBasket(index) {
 }
 function getTotal(index) {
     return `${totalArray[index].replace('.',',')}  €`;
-    
 }

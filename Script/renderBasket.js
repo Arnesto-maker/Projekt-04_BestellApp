@@ -5,5 +5,4 @@ function renderBasket() {
         menuBasketSection.innerHTML += getBuyBasket(index);
         amountSum(index);
     }
-    
 }

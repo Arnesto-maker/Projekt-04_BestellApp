@@ -38,7 +38,6 @@ function amountSum(index) {
          }
          totalArray.splice(0,1,(sum.toFixed(2)))
          renderTotal();
-    
 }
         
 
