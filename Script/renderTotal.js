@@ -5,3 +5,4 @@ function renderTotal() {
         totalSumNumber.innerHTML += getTotal(0)
     }
 }
+
