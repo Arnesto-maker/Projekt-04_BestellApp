@@ -33,3 +33,14 @@
 #hamburger span:nth-child(3){
     top: 75%;
 }
+#hamburger.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+#hamburger.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

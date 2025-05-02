@@ -16,9 +16,14 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    
-    
 }
+@media (max-width: 975px){
+    .content-grandParent01{
+        width:100%
+    }
+
+}
+
 .content-parent01{
     display: flex;
     flex-direction: column;
@@ -157,6 +162,20 @@
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 975px){
+    .content-grandParent02{
+        width:40vw;
+        position:absolute;
+        background-color: white;
+        right: -100%;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .content-grandParent02.active{
+        right : 0;
+    }
+    
+}
 .content-parent021{
     min-height: 50vh;
     max-height: 50vh;
@@ -167,6 +186,13 @@
     gap: 16px;
     position: sticky;
     top: 0;
+
+}
+@media (max-width: 975px){
+    .content-parent021{
+        position: sticky;
+        top: 0;
+    }
 
 }
 .child-title{

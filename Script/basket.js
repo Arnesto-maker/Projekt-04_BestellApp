@@ -29,6 +29,11 @@ function removeFormBasket(index) {
             renderTotal();
 }
 function ordered() {
-    alert('bought')
-    window.location.reload()
+    let orderButton = document.getElementById('buyButton')
+    orderButton.innerHTML = " ";
+    orderButton.innerHTML = "Test Bestellung vorgenommen....."
+    setTimeout(function() {
+        window.location.reload()
+    }, 2000) 
+    
 }
