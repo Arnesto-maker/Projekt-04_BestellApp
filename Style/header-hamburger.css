@@ -1,9 +1,14 @@
 #hamburger-menu{
     padding-top: 24px;
     padding-right: 24px;
-    display: flex;
+    display: none;
     align-items: center;
     
+}
+@media(max-width:950px){
+    #hamburger-menu{
+        display: flex;
+    }
 }
 #hamburger{
     height: 32px;

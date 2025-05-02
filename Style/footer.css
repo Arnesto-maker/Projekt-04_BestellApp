@@ -6,9 +6,9 @@ footer {
     flex: 1;
     justify-content: center;
     width: 100%;
-    
 
 }
+
 .footer-parent{
     max-width: 1920px;
     display: flex;
@@ -20,6 +20,7 @@ footer {
 .footer-content{
     color: white;
 }
+
 .footer-logo{
     display: flex;
     justify-content: center;

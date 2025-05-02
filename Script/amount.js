@@ -20,9 +20,9 @@ function amountMinus(index) {
         let totalSumNumber = document.getElementById('totalSumNumber');
         totalSumNumber.innerHTML = " 0,00 €";
         removeFormBasket(index);
-        renderBasket()
-    }
-}
+        renderBasket()}}
+
+
 function amountSum(index) {
     let sumNumber = document.getElementById('sumNumber'+index)
     sumNumber.innerHTML = " ";
@@ -34,8 +34,7 @@ function amountSum(index) {
              sum += parseFloat(sumNumberArray[i]);
          }
          totalArray.splice(0,1,(sum.toFixed(2)))
-         renderTotal();
-}
+         renderTotal();}
         
 
 

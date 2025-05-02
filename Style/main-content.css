@@ -63,7 +63,11 @@
     margin-right: 8px;
     margin-top: 18px;
     margin-bottom: 18px;
-    
+}
+@media(max-width:950px){
+    .text01{
+        margin-top: 80px;
+    }
 }
 .text02{
     display: flex;
@@ -164,17 +168,38 @@
 }
 @media (max-width: 975px){
     .content-grandParent02{
-        width:40vw;
+        width:30vw;
         position:absolute;
         background-color: white;
         right: -100%;
         top: 0;
         transition: all 0.3s ease-in-out;
+        min-height:340vh;
     }
     .content-grandParent02.active{
         right : 0;
     }
-    
+}
+@media (max-width: 650px){
+    .content-grandParent02{
+        width:97vw;
+        min-height:340vh;
+    }
+}
+@media (max-width: 540px){
+    .content-grandParent02{
+        width:96.5vw;
+        min-height:340vh;
+    }
+}
+@media (max-width: 540px){
+    .content-grandParent02{
+        width:40vw;
+        min-height: 370vh;
+        min-width: 320px;
+        overflow: hidden;
+
+    }
 }
 .content-parent021{
     min-height: 50vh;
@@ -293,7 +318,12 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    
+}
+@media (max-width: 650px){
+    .delivery{
+        width: 300px;
+        margin-left: 16px;
+    }
 }
 .totalSum{
     display: flex;
@@ -301,6 +331,12 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+}
+@media (max-width: 650px){
+    .totalSum{
+        width:300px;
+        margin-left: 16px;
+    }
 }
 .buyButton{
     display: flex;
