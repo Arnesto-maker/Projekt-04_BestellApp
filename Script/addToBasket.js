@@ -13,7 +13,6 @@ function addToBasket(index) {
         let sumNumber = document.getElementById('sumNumber'+index)
         sumNumber.innerHTML = " ";
         sumNumberAmountAndPrice = amount[index]*price[index];
-        sumNumberArray.splice(index,1,sumNumberAmountAndPrice.toFixed(2));
         amountSum(index)
         renderTotal()
         sumNumber.innerHTML = sumNumberArray[index].replace('.',',') + '€';

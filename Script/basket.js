@@ -16,6 +16,7 @@ function removeFormBasket(index) {
         newAmount = 1;
         amount.splice(index,1,newAmount)
         renderBasket();
+        sumNumberArray.splice(index,1)
         let sum = 0;
          for (i = 0; i <sumNumberArray.length; i++) {
          sum += parseFloat(sumNumberArray[i]);
@@ -26,5 +27,8 @@ function removeFormBasket(index) {
          }
             renderBasket()
             renderTotal();
-        
+}
+function ordered() {
+    alert('bought')
+    window.location.reload()
 }
