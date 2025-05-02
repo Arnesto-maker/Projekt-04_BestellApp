@@ -4,14 +4,15 @@
     flex-direction: row;
     align-items: center;
     flex: 1;
-    min-height: 200vh;
-    max-height: 200vh;
-    height: 200vh;
+    min-height: max-content;
+    max-height: max-content;
+    height: max-content;
+    position: relative;
 }
 .content-grandParent01{
-    min-height: 200vh;
-    max-height: 200vh;
-    height: 200vh;
+    min-height: 324vh;
+    max-height: max-content;
+    height: max-content;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -21,8 +22,8 @@
 .content-parent01{
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
-    max-height: 100vh;
+    min-height: max-content;
+    max-height: max-content;
     position: relative;
     
 }
@@ -90,10 +91,10 @@
     margin-left: 8px;
     margin-right: 8px;
     gap: 10px;
-    min-height: 120vh;
-    max-height: 120vh;
-    height: 120vh;
-    overflow-y: scroll;
+    min-height: max-content;
+    max-height: max-content;
+    height: max-content;
+
 }
 .menuCard{
     display: flex;
@@ -148,11 +149,13 @@
     
 }
 .content-grandParent02{
-    min-height: 200vh;
-    max-height: 200vh;
-    height: 100vh;
+    min-height:323vh;
+    max-height: max-content;
+    height: max-content;
     width: 20%;
     border: 2px solid rgba(128, 128, 128, 0.218);
+    display: flex;
+    flex-direction: column;
 }
 .content-parent021{
     min-height: 50vh;
