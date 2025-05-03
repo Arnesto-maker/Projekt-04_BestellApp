@@ -34,12 +34,59 @@ function removeFormBasket(index) {
             renderBasket()
             renderTotal();
 }
+
 function ordered() {
     let orderButton = document.getElementById('buyButton')
-    orderButton.innerHTML = " ";
     orderButton.innerHTML = "Test Bestellung vorgenommen....."
     setTimeout(function() {
         window.location.reload()
     }, 2000) 
     
 }
+
+function includedFunction(index) {
+    let sumNumber = document.getElementById('sumNumber'+index)
+    sumNumberAmountAndPrice = amount[index]*price[index];
+    amountSum(index)
+    renderTotal()
+    sumNumber.innerHTML = sumNumberArray[index].replace('.',',') + '€';}
+
+
+function amountNumberFunction(index) {
+    let amountNumber = document.getElementById('amountNumber'+index); 
+     let newAmount = amount[index];
+     newAmount ++;
+     amount.splice(index,1,newAmount)
+     amountNumber.innerHTML = newAmount + "X";
+}
+
+
+function addToBasket(index) {
+    let dishPrice = dish1[index].price;
+    let dishName = dish1[index].name;
+    const included= basketTitle.includes(dishName)  ;
+    if (included) {
+        index = basketTitle.indexOf(dishName);
+        amountNumberFunction(index)
+        includedFunction(index)} 
+    else {
+        price.push(dishPrice);
+        basketTitle.push(dishName);
+        sumNumberAmountAndPrice = amount[index]*dishPrice;
+        sumNumberArray.splice(index,1,sumNumberAmountAndPrice.toFixed(2));
+        renderTotal()
+        renderBasket();
+    }
+}
+
+
+function buyButtonActive(){
+    let buyButton = document.getElementById('buyButton');
+    buyButton.classList.add('active');
+}
+
+function buyButtonDeactive() {
+    let buyButton = document.getElementById('buyButton');
+    buyButton.classList.remove('active');
+}
+

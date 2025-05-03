@@ -3,16 +3,15 @@ function amountplus(index) {
     let newAmount = amount[index];
     newAmount ++;
     amount.splice(index,1,newAmount)
-    amountNumber.innerHTML = " "
     amountNumber.innerHTML = newAmount + "X";
     amountSum(index)
 }
+
 function amountMinus(index) {
     let amountNumber = document.getElementById('amountNumber'+index);
     let newAmount = amount[index];
     newAmount --; 
-    amount.splice(index,1,newAmount)
-    amountNumber.innerHTML = " "
+    amount.splice(index,1,newAmount);
     amountNumber.innerHTML = newAmount + "X";
     sumNumberArray.splice(index,1,sumNumberAmountAndPrice.toFixed(2));
      amountSum(index);
@@ -20,12 +19,12 @@ function amountMinus(index) {
         let totalSumNumber = document.getElementById('totalSumNumber');
         totalSumNumber.innerHTML = " 0,00 €";
         removeFormBasket(index);
-        renderBasket()}}
-
+        renderBasket()
+    }
+}
 
 function amountSum(index) {
     let sumNumber = document.getElementById('sumNumber'+index)
-    sumNumber.innerHTML = " ";
     sumNumberAmountAndPrice = amount[index]*price[index];
     sumNumberArray.splice(index,1,sumNumberAmountAndPrice.toFixed(2));
     sumNumber.innerHTML = ( sumNumberAmountAndPrice).toFixed(2).replace('.',',') +"€";
@@ -34,8 +33,17 @@ function amountSum(index) {
              sum += parseFloat(sumNumberArray[i]);
          }
          totalArray.splice(0,1,(sum.toFixed(2)))
-         renderTotal();}
-        
+         renderTotal();
+}
+
+function sumNumberTotal() {
+    sum = 0
+    for (let index = 0; index < sumNumberArray.length; index++) {
+        sum += parseFloat(sumNumberArray[i]);
+    }
+    return sum
+}
+
 
 
 
