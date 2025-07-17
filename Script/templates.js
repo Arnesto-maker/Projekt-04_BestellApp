@@ -20,7 +20,7 @@ function getBuyBasket(index) {
                             <div class="amount-sum">
                                 <div class="sumNumber" id="sumNumber${index}"></div>
                                 <div class="basket-icon">
-                                    <img src="Assets/trash-969.png" alt="trash" id="basketIconImg${index}" class="basketIconImg" onmousedown="basketActive(${index})" onmouseup="basketDeactive(${index})" onclick="removeFormBasket(${index})">
+                                    <img src="assets/trash-969.png" alt="trash" id="basketIconImg${index}" class="basketIconImg" onmousedown="basketActive(${index})" onmouseup="basketDeactive(${index})" onclick="removeFormBasket(${index})">
                                 </div>
                             </div>
                         </div>
