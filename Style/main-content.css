@@ -200,6 +200,7 @@
     gap: 16px;
     position: sticky;
     top: 0;
+    
 
 }
 @media (max-width: 975px){
@@ -207,8 +208,25 @@
         position: sticky;
         top: 0;
         min-height: max-content;
-        padding: 8px;
+        padding: 32px;
 
+    }
+
+}
+@media (max-width: 370px){
+    .content-parent021{
+        position: sticky;
+        top: 0;
+        min-height: max-content;
+        padding: 4px;
+
+    }
+
+}
+
+@media (max-width: 318px){
+    .content-parent021{
+        display: none;
     }
 
 }
